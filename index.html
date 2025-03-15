@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Bible Verse Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>Random Bible Verse Generator</h1>
+        <p>Find inspiration with a random Bible verse.</p>
+      </header>
+    <main>
+      <!-- Translation Dropdown -->
+      <div class="form-group">
+        <label for="translation">Select Translation:</label>
+        <select id="translation">
+            <option value="kjv" selected>King James Version (KJV)</option>
+            <option value="web">World English Bible (WEB)</option>
+          </select>
+      </div>
+<!-- Save Verse Button -->
+<div id="save-buttons" class="save-buttons">
+    <button id="save-btn">
+      <i class="fas fa-heart"></i> Save Verse
+    </button>
+  </div>
+
+    <!-- Verse Card -->
+<div class="card">
+    <div id="verse-container">
+      <p id="verse-text">Click the button to generate a random Bible verse.</p>
+      <p id="verse-reference"></p>
+    </div>
+    <div id="loading" class="loading">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+  </div>
+  
+  <!-- Copy to Clipboard Button -->
+  <div id="copy-buttons" class="copy-buttons">
+    <button id="copy-btn">
+      <i class="fas fa-copy"></i> Copy Verse
+    </button>
+  </div>
+  
+  <!-- Facebook Share Button -->
+  <div id="share-buttons" class="share-buttons">
+    <button id="facebook-share">
+      <i class="fab fa-facebook"></i> Share on Facebook
+    </button>
+  </div>
+
+      <!-- Generate Button -->
+      <button id="generate-btn">
+        <i class="fas fa-random"></i> Generate Verse
+      </button>
+    </main>
+    
+     <!-- Favorites Section -->
+  <div id="favorites-section">
+    <h2>Favorites</h2>
+    <div id="favorites-list"></div>
+  </div>
+
+    <footer>
+      <p>Made with ❤️ by Johanese</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
